@@ -1,0 +1,37 @@
+name: filepod
+description: >-
+  FilePod - A Solid File Browser Application for managing files
+  on your personal online data store (POD).
+publish_to: 'none'
+version: 0.0.1+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  markdown_tooltip: 0.0.10
+  shared_preferences: ^2.5.4
+  solidpod: ^0.10.1
+  solidui:
+    git:
+      url: https://github.com/anusii/solidui.git
+      ref: dev
+  window_manager: ^0.5.1
+
+dependency_overrides:
+  solidpod:
+    git:
+      url: https://github.com/anusii/solidpod.git
+      ref: dev
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
