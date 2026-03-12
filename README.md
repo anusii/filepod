@@ -65,7 +65,13 @@ utilising the Solid ecosystem.
 ## Screenshots
 
 <div align="center">
-  <em>Screenshots to be added.</em>
+  <img
+ src="https://github.com/user-attachments/assets/312db6e4-7d42-4f0d-8ff2-e417f22cfc33"
+ alt="Login page of FilePod" width="600">
+  <br/>
+  <img
+ src="https://github.com/user-attachments/assets/3c3cc414-8d58-4d85-8a79-5207e1cb172e"
+ alt="Home page of FilePod" width="600">
 </div>
 
 ## Requirements
