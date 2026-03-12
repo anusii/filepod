@@ -57,10 +57,10 @@ class AppScaffold extends StatelessWidget {
         ),
         SolidMenuItem(
           icon: Icons.folder,
-          title: 'Files',
+          title: 'App Files',
           tooltip: '''
 
-            **Files:** Tap here to browse the files on your POD.
+            **Files:** Tap here to browse the files on your POD for this app.
 
             ''',
           child: SolidFile(),
