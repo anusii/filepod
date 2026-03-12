@@ -6,7 +6,7 @@
 [![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev)
 
 [![GitHub License](https://img.shields.io/github/license/anusii/filepod)](https://raw.githubusercontent.com/anusii/filepod/dev/LICENSE)
-[![GitHub Version](https://img.shields.io/badge/dynamic/yaml?url=https://raw.githubusercontent.com/anusii/filepod/dev/pubspec.yaml&query=$.version&label=version&logo=github)](https://github.com/anusii/filepod/blob/main/CHANGELOG.md)
+[![GitHub Version](https://img.shields.io/badge/dynamic/yaml?url=https://raw.githubusercontent.com/anusii/filepod/dev/pubspec.yaml&query=$.version&label=version&logo=github)](https://github.com/anusii/filepod/blob/dev/CHANGELOG.md)
 [![GitHub Last Updated](https://img.shields.io/github/last-commit/anusii/filepod?label=last%20updated)](https://github.com/anusii/filepod/commits/dev/)
 [![GitHub Commit Activity (dev)](https://img.shields.io/github/commit-activity/w/anusii/filepod/dev)](https://github.com/anusii/filepod/commits/dev/)
 [![GitHub Issues](https://img.shields.io/github/issues/anusii/filepod)](https://github.com/anusii/filepod/issues)
@@ -245,7 +245,7 @@ issues at [GitHub Issues](https://github.com/anusii/filepod/issues).
 The authors of the package will respond to issues as best we can.
 
 <!-- markdownlint-disable MD036 -->
-*Time-stamp: <Friday 2026-03-13 00:00:00 +1100 Tony Chen>*
+*Time-stamp: <Friday 2026-03-13 09:14:41 +1100 Graham Williams>*
 <!-- markdownlint-enable MD036 -->
 
 <!-- markdownlint-disable MD053 -->
