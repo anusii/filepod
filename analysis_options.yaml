@@ -1,0 +1,20 @@
+# Configure the analyser for static analysis of Dart code.
+#
+# Invoke the analyser from the command line:
+#
+#   flutter analyze
+
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    avoid_print: true
+    prefer_single_quotes: true
+    require_trailing_commas: true
+    directives_ordering: false
+    prefer_const_constructors: true
+
+analyzer:
+  exclude:
+    - ignore/**
+    - ignore/
