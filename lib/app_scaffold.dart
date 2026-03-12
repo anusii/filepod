@@ -4,7 +4,7 @@
 ///
 /// Licensed under the GNU General Public License, Version 3 (the "License");
 ///
-/// License: https://opensource.org/license/gpl-3-0
+/// License: https://www.gnu.org/licenses/gpl-3.0.html
 //
 // This program is free software: you can redistribute it and/or modify it under
 // the terms of the GNU General Public License as published by the Free Software
@@ -17,7 +17,7 @@
 // details.
 //
 // You should have received a copy of the GNU General Public License along with
-// this program. If not, see <https://opensource.org/license/gpl-3-0>.
+// this program. If not, see <https://www.gnu.org/licenses/gpl-3.0.html>.
 ///
 /// Authors: Tony Chen
 
@@ -80,7 +80,7 @@ class AppScaffold extends StatelessWidget {
       appBar: SolidAppBarConfig(
         title: appTitle.split(' - ')[0],
         versionConfig: SolidVersionConfig(
-          changelogUrl: 'https://github.com/anusii/filepod/blob/dev/'
+          changelogUrl: 'https://github.com/anusii/filepod/blob/main/'
               'CHANGELOG.md',
           showDate: true,
           userTextStyle: TextStyle(

@@ -6,7 +6,7 @@
 [![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev)
 
 [![GitHub License](https://img.shields.io/github/license/anusii/filepod)](https://raw.githubusercontent.com/anusii/filepod/dev/LICENSE)
-[![GitHub Version](https://img.shields.io/badge/dynamic/yaml?url=https://raw.githubusercontent.com/anusii/filepod/dev/pubspec.yaml&query=$.version&label=version&logo=github)](https://github.com/anusii/filepod/blob/dev/CHANGELOG.md)
+[![GitHub Version](https://img.shields.io/badge/dynamic/yaml?url=https://raw.githubusercontent.com/anusii/filepod/dev/pubspec.yaml&query=$.version&label=version&logo=github)](https://github.com/anusii/filepod/blob/main/CHANGELOG.md)
 [![GitHub Last Updated](https://img.shields.io/github/last-commit/anusii/filepod?label=last%20updated)](https://github.com/anusii/filepod/commits/dev/)
 [![GitHub Commit Activity (dev)](https://img.shields.io/github/commit-activity/w/anusii/filepod/dev)](https://github.com/anusii/filepod/commits/dev/)
 [![GitHub Issues](https://img.shields.io/github/issues/anusii/filepod)](https://github.com/anusii/filepod/issues)
@@ -141,7 +141,7 @@ make prep
 
 ## Application Structure
 
-```
+```text
 lib/
 ├── main.dart              # Main entry point
 ├── app.dart               # Root App widget with SolidThemeApp and SolidLogin

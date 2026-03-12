@@ -100,8 +100,6 @@ jobs:
             --no-progress
             '*.md'
             './**/*.dart'
-            'assets/**/*.md'
-            'assets/**/*.html'
           fail: true
 
   locmax:
