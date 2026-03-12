@@ -226,7 +226,8 @@ flutter run -d macos
 
 Copyright (C) 2026, Software Innovation Institute, ANU.
 
-Licensed under the MIT License. See [LICENSE](LICENSE) for details.
+Licensed under the GNU General Public License, Version 3.
+See [LICENSE](LICENSE) for details.
 
 ## Authors
 
