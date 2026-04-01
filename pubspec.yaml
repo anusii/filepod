@@ -20,9 +20,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  markdown_tooltip: 0.0.10
-  shared_preferences: ^2.5.4
-  solidpod: ^0.12.2
   solidui: ^0.3.8
   window_manager: ^0.5.1
 
@@ -33,7 +30,7 @@ dev_dependencies:
 flutter:
   assets:
     - assets/images/app_icon.png
-    - assets/images/app_image.png
+    - assets/images/app_image.jpg
   uses-material-design: true
 
 # 20250429 gjw Define launcher icons for all platforms (except Linux)
