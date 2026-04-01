@@ -1,13 +1,40 @@
-# Changelog
+# File Pod Change Log
 
-All notable changes to this project will be documented in this file.
+Noted here are the high level changes for the app.  Each update
+includes a short user-oriented description.  The next release is 0.2
+following incremental updates through the 0.1.n series.
 
-## 0.0.1
+You can run the app in your browser from the
+[**web**](https://filepod.solidcommunity.au) or else download and
+install locally the latest version from the [Solid Community
+AU](https://solidcommunity.au) or directly: for **Android** as
+[aab](https://solidcommunity.au/installers/filepod.aab) or
+[apk](https://solidcommunity.au/installers/filepod.apk); for
+**GNU/Linux** as
+[deb](https://solidcommunity.au/installers/filepod_amd64.deb) or
+[snap](https://solidcommunity.au/installers/filepod_amd64.snap) or
+[zip](https://solidcommunity.au/installers/filepod-linux.zip); for
+**macOS** as
+[dmg](https://solidcommunity.au/installers/filepod-macos.dmg) or
+[zip](https://solidcommunity.au/installers/filepod-macos.zip); for
+**Windows** as
+[inno](https://solidcommunity.au/installers/filepod-windows-inno.exe)
+or [zip](https://solidcommunity.au/installers/filepod-windows.zip).
 
-- Initial release of FilePod.
-- Solid POD file browser with upload and download functionality.
-- Authentication via SolidLogin.
-- Responsive navigation with rail and drawer modes.
-- Theme switching (light/dark/system).
-- Security key management integration.
-- All POD Files view for browsing from the root.
+Contributions are welcome. Visit
+[github](https://github.com/gjwgit/filepod) to submit an issue or, even
+better, fork the repository yourself, update the code, and submit a
+Pull Request. Coding documentation is
+[available](https://solidcommunity.au/docs/filepod/).
+
+We make this project available for free so if you appreciate the app
+then please show some ❤️ and tap on the star at
+[GitHub](https://github.com/gjwgit/filepod) to support our work.
+
+This app is authored by Tony Chen.
+
+## 0.2 Review and Fine Tune
+
+## 0.1 Initial Shell App
+
++ Initial template app [0.1.0 20260327 tonypioneer]

@@ -1,6 +1,6 @@
 ---
 name: 'bug report'
-about: Create a bug report to help improve FilePod.
+about: Create a bug report to help improve Rattle.
 title: ''
 labels: ''
 assignees: ''
@@ -13,7 +13,7 @@ assignees: ''
 
 ## To Reproduce
 
-Steps to reproduce the behaviour:
+Steps to reproduce the behavior:
 
 1. Go to '...'
 2. Click on '....'

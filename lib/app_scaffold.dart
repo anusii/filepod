@@ -80,7 +80,7 @@ class AppScaffold extends StatelessWidget {
       appBar: SolidAppBarConfig(
         title: appTitle.split(' - ')[0],
         versionConfig: SolidVersionConfig(
-          changelogUrl: 'https://github.com/anusii/filepod/blob/main/'
+          changelogUrl: 'https://github.com/anusii/filepod/blob/dev/'
               'CHANGELOG.md',
           showDate: true,
           userTextStyle: TextStyle(
