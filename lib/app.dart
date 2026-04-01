@@ -1,6 +1,6 @@
 /// The primary [MaterialApp] widget.
 ///
-// Time-stamp: <Wednesday 2026-02-04 08:19:29 +1100 Graham Williams>
+// Time-stamp: <Thursday 2026-04-02 10:58:22 +1100 Graham Williams>
 ///
 /// Copyright (C) 2026, Software Innovation Institute, ANU.
 ///
@@ -50,11 +50,11 @@ class App extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
-      home: const SolidLogin(
-        image: AssetImage('assets/images/app_image.jpg'),
-        logo: AssetImage('assets/images/app_icon.png'),
-         title: appTitle.replaceAll(' - ', '\n'),
-       child: appScaffold,
+      home: SolidLogin(
+        image: const AssetImage('assets/images/app_image.jpg'),
+        logo: const AssetImage('assets/images/app_icon.png'),
+        title: appTitle.replaceAll(' - ', '\n'),
+        child: appScaffold,
       ),
     );
   }
