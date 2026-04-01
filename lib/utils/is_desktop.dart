@@ -1,10 +1,11 @@
 /// Check if we are running a desktop (and not a browser).
 ///
-/// Copyright (C) 2026, Software Innovation Institute, ANU.
+/// Copyright (C) 2025-2026, Software Innovation Institute, ANU.
 ///
-/// Licensed under the GNU General Public License, Version 3 (the "License");
-///
-/// License: https://www.gnu.org/licenses/gpl-3.0.html
+/// License: GNU General Public License, Version 3 (the "License")
+/// https://opensource.org/license/gpl-3-0
+//
+// Time-stamp: <Monday 2025-09-29 07:03:23 +1000 Graham Williams>
 //
 // This program is free software: you can redistribute it and/or modify it under
 // the terms of the GNU General Public License as published by the Free Software
@@ -17,15 +18,17 @@
 // details.
 //
 // You should have received a copy of the GNU General Public License along with
-// this program. If not, see <https://www.gnu.org/licenses/gpl-3.0.html>.
+// this program.  If not, see <https://opensource.org/license/gpl-3-0>.
 ///
-/// Authors: Tony Chen
+/// Authors: Graham Williams, Tony Chen
 
 library;
 
-import 'dart:io' show Platform;
-
 import 'package:flutter/foundation.dart' show kIsWeb;
+
+import 'package:universal_io/io.dart' show Platform;
+
+/// Test if we are running on a desktop platform but not in a browser.
 
 bool get isDesktop {
   if (kIsWeb) return false;

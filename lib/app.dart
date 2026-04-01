@@ -1,10 +1,12 @@
-/// The primary App widget.
+/// The primary [MaterialApp] widget.
+///
+// Time-stamp: <Wednesday 2026-02-04 08:19:29 +1100 Graham Williams>
 ///
 /// Copyright (C) 2026, Software Innovation Institute, ANU.
 ///
-/// Licensed under the GNU General Public License, Version 3 (the "License");
+/// Licensed under the GNU General Public License, Version 3 (the "License").
 ///
-/// License: https://www.gnu.org/licenses/gpl-3.0.html
+/// License: https://opensource.org/license/gpl-3-0.
 //
 // This program is free software: you can redistribute it and/or modify it under
 // the terms of the GNU General Public License as published by the Free Software
@@ -17,9 +19,9 @@
 // details.
 //
 // You should have received a copy of the GNU General Public License along with
-// this program. If not, see <https://www.gnu.org/licenses/gpl-3.0.html>.
+// this program.  If not, see <https://opensource.org/license/gpl-3-0>.
 ///
-/// Authors: Tony Chen
+/// Authors: Tony Chen, Graham Williams
 
 library;
 
@@ -30,14 +32,18 @@ import 'package:solidui/solidui.dart';
 import 'app_scaffold.dart';
 import 'constants/app.dart';
 
+// This widget is the root of the application.
+
 class App extends StatelessWidget {
   const App({super.key});
 
   @override
   Widget build(BuildContext context) {
     return SolidThemeApp(
+      // Turn off debug banner for now.
       debugShowCheckedModeBanner: false,
       title: appTitle,
+
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: const Color(0xFF007AFF),
@@ -47,7 +53,8 @@ class App extends StatelessWidget {
       home: const SolidLogin(
         image: AssetImage('assets/images/app_image.jpg'),
         logo: AssetImage('assets/images/app_icon.png'),
-        child: appScaffold,
+         title: appTitle.replaceAll(' - ', '\n'),
+       child: appScaffold,
       ),
     );
   }
