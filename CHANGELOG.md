@@ -35,6 +35,8 @@ This app is authored by Tony Chen.
 
 ## 0.2 Review and Fine Tune
 
++ Add icon build, fix lint issues, clean code [0.1.1 20260402 gjw]
+
 ## 0.1 Initial Shell App
 
 + Initial template app [0.1.0 20260327 tonypioneer]
