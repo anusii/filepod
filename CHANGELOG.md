@@ -22,19 +22,20 @@ AU](https://solidcommunity.au) or directly: for **Android** as
 or [zip](https://solidcommunity.au/installers/filepod-windows.zip).
 
 Contributions are welcome. Visit
-[github](https://github.com/gjwgit/filepod) to submit an issue or, even
+[github](https://github.com/anusii/filepod) to submit an issue or, even
 better, fork the repository yourself, update the code, and submit a
 Pull Request. Coding documentation is
 [available](https://solidcommunity.au/docs/filepod/).
 
 We make this project available for free so if you appreciate the app
 then please show some ❤️ and tap on the star at
-[GitHub](https://github.com/gjwgit/filepod) to support our work.
+[GitHub](https://github.com/anusii/filepod) to support our work.
 
 This app is authored by Tony Chen.
 
 ## 0.2 Review and Fine Tune
 
++ Migrate to latest solidui for item counts [0.1.2 20260402 gjw]
 + Add icon build, fix lint issues, clean code [0.1.1 20260402 gjw]
 
 ## 0.1 Initial Shell App

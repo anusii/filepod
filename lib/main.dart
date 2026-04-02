@@ -38,7 +38,7 @@ import 'package:filepod/app.dart';
 import 'package:filepod/constants/app.dart';
 import 'package:filepod/utils/is_desktop.dart';
 
-// 20260402 gjw Below is the main entry point for the application. 
+// 20260402 gjw Below is the main entry point for the application.
 // For main() we require [async] because we asynchronously
 // [await] the window manager below. Often, `main()` will include just the
 // call [runApp].
