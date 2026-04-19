@@ -9,7 +9,7 @@ identical across all platforms so the experience across different
 platforms will be very similar.
 
 Visit the
-[CHANGELOG](https://github.com/gjwgit/filepod/blob/dev/CHANGELOG.md)
+[CHANGELOG](https://github.com/anusii/filepod/blob/dev/CHANGELOG.md)
 for the latest updates.
 
 Run the app online: [**web**](https://filepod.solidcommunity.au).
@@ -95,10 +95,10 @@ Then set up your local installation (only required once):
 
 ```bash
 ln -s ${HOME}/.local/share/filepod/filepod ${HOME}/.local/bin/
-wget https://raw.githubusercontent.com/gjwgit/filepod/dev/installers/app.desktop -O ${HOME}/.local/share/applications/filepod.desktop
+wget https://raw.githubusercontent.com/anusii/filepod/dev/installers/app.desktop -O ${HOME}/.local/share/applications/filepod.desktop
 sed -i "s/USER/$(whoami)/g" ${HOME}/.local/share/applications/filepod.desktop
 mkdir -p ${HOME}/.local/share/icons/hicolor/256x256/apps/
-wget https://github.com/gjwgit/filepod/raw/dev/installers/app.png -O ${HOME}/.local/share/icons/hicolor/256x256/apps/filepod.png
+wget https://github.com/anusii/filepod/raw/dev/installers/app.png -O ${HOME}/.local/share/icons/hicolor/256x256/apps/filepod.png
 ```
 
 To install for any user on the computer:
@@ -106,8 +106,8 @@ To install for any user on the computer:
 ```bash
 sudo unzip filepod-linux.zip -d /opt/filepod
 sudo ln -s /opt/filepod/filepod /usr/local/bin/
-wget https://raw.githubusercontent.com/gjwgit/filepod/dev/installers/app.desktop -O ${HOME}/usr/local/share/applications/filepod.desktop
-wget https://github.com/gjwgit/filepod/raw/dev/installers/app.png -O ${HOME}/use/local/share/icons/filepod.png
+wget https://raw.githubusercontent.com/anusii/filepod/dev/installers/app.desktop -O ${HOME}/usr/local/share/applications/filepod.desktop
+wget https://github.com/anusii/filepod/raw/dev/installers/app.png -O ${HOME}/use/local/share/icons/filepod.png
 ```
 
 Once installed you can run the app from the GNOME desktop through
