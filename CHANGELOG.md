@@ -35,6 +35,7 @@ This app is authored by Tony Chen.
 
 ## 0.2 Review and Fine Tune
 
++ Add user profile [0.1.3 20260421 tonypioneer]
 + Migrate to latest solidui for item counts [0.1.2 20260402 gjw]
 + Add icon build, fix lint issues, clean code [0.1.1 20260402 gjw]
 
