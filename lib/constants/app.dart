@@ -1,6 +1,6 @@
 /// FilePod - app-wide constants.
 ///
-// Time-stamp: <Wednesday 2026-04-29 08:53:38 +1000 Graham Williams>
+// Time-stamp: <Wednesday 2026-04-29 15:15:08 +1000 Graham Williams>
 ///
 /// Copyright (C) 2025-2026, Software Innovation Institute, ANU
 ///
@@ -25,5 +25,7 @@
 /// Authors: Tony Chen, Graham Williams
 
 library;
+
+/// Application title displayed as the window title.
 
 const String appTitle = 'FilePod - File Browser for Solid Pods';
