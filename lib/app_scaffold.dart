@@ -1,6 +1,6 @@
-/// The application scaffold configuration.
+/// FilePod - application scaffold configuration.
 ///
-// Time-stamp: <Wednesday 2026-02-18 08:17:54 +1100 Graham Williams>
+// Time-stamp: <Wednesday 2026-04-29 14:19:23 +1000 Graham Williams>
 ///
 /// Copyright (C) 2026, Software Innovation Institute, ANU.
 ///
@@ -21,7 +21,7 @@
 // You should have received a copy of the GNU General Public License along with
 // this program. If not, see <https://opensource.org/license/gpl-3-0>.
 ///
-/// Authors: Tony Chen
+/// Authors: Tony Chen, Graham Williams
 
 library;
 
@@ -29,9 +29,9 @@ import 'package:flutter/material.dart';
 
 import 'package:solidui/solidui.dart';
 
-import 'constants/app.dart';
-import 'home.dart';
-import 'screens/all_pod_files_page.dart';
+import 'package:filepod/constants/app.dart';
+import 'package:filepod/home.dart';
+import 'package:filepod/screens/browse_files.dart';
 
 final _scaffoldController = SolidScaffoldController();
 
@@ -52,7 +52,7 @@ class AppScaffold extends StatelessWidget {
           title: 'Home',
           tooltip: '''
 
-            **Home:** Tap here to return to the main page for the app.
+            **Home**\nTap here to return to the main page for the app.
 
             ''',
           child: Home(title: appTitle),
@@ -62,7 +62,7 @@ class AppScaffold extends StatelessWidget {
           title: 'App Files',
           tooltip: '''
 
-            **Files:** Tap here to browse the files on your POD for this app.
+            **Files**\nTap here to browse the files on your POD for this app.
 
             ''',
           child: SolidFile(),
@@ -72,11 +72,11 @@ class AppScaffold extends StatelessWidget {
           title: 'All POD Files',
           tooltip: '''
 
-            **All POD Files:** Tap here to browse all folders on your POD
+            **All Files**\nTap here to browse all folders on your POD
             from the root.
 
             ''',
-          child: AllPodFilesPage(),
+          child: BrowseFiles(),
         ),
       ],
       appBar: SolidAppBarConfig(
@@ -113,13 +113,13 @@ class AppScaffold extends StatelessWidget {
         ),
         applicationLegalese: '''
 
-        © 2026 Software Innovation Institute, the Australian National University
+        © 2026 Software Innovation Institute, ANU
 
         ''',
         text: '''
 
-        FilePod is a Solid file browser application that allows you
-        to manage files on your personal online data store (POD).
+        FilePod is a file browser application that allows you to manage files on
+        your personal online data store (Pod) hosted on a Solid server.
 
         Key features:
 
@@ -146,7 +146,7 @@ class AppScaffold extends StatelessWidget {
         showInAppBarActions: true,
       ),
       hideNavRail: false,
-      enableProfile: true,
+      //enableProfile: true,
       onLogout: (context) => SolidAuthHandler.instance.handleLogout(context),
       child: const Home(title: appTitle),
     );

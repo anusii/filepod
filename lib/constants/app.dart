@@ -1,6 +1,6 @@
-/// App-wide constants.
+/// FilePod - app-wide constants.
 ///
-// Time-stamp: <Friday 2025-11-21 19:02:53 +1100 Graham Williams>
+// Time-stamp: <Wednesday 2026-04-29 08:53:38 +1000 Graham Williams>
 ///
 /// Copyright (C) 2025-2026, Software Innovation Institute, ANU
 ///
@@ -26,4 +26,4 @@
 
 library;
 
-const String appTitle = 'FilePod - Solid File Browser';
+const String appTitle = 'FilePod - File Browser for Solid Pods';

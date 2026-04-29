@@ -1,4 +1,6 @@
-/// All POD Files page - Displays all folders on the POD from the root.
+/// FilePod - display all root folders on the pod.
+///
+// Time-stamp: <Wednesday 2026-04-29 08:59:07 +1000 Graham Williams>
 ///
 /// Copyright (C) 2026, Software Innovation Institute, ANU.
 ///
@@ -19,7 +21,7 @@
 // You should have received a copy of the GNU General Public License along with
 // this program. If not, see <https://www.gnu.org/licenses/gpl-3.0.html>.
 ///
-/// Authors: Tony Chen
+/// Authors: Tony Chen, Graham Williams
 
 library;
 
@@ -27,14 +29,14 @@ import 'package:flutter/material.dart';
 
 import 'package:solidui/solidui.dart';
 
-class AllPodFilesPage extends StatelessWidget {
-  const AllPodFilesPage({super.key});
+class BrowseFiles extends StatelessWidget {
+  const BrowseFiles({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const SolidFile(
       currentPath: SolidFile.podRoot,
-      friendlyFolderName: 'All POD Files',
+      friendlyFolderName: 'All Files and Folders',
     );
   }
 }
