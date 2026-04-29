@@ -1,12 +1,12 @@
-/// FilePod - Solid file browser application main entry point.
+/// FilePod - file browser for your solid pod main entry point.
 ///
-// Time-stamp: <Friday 2025-11-21 19:02:07 +1100 Graham Williams>
+// Time-stamp: <Wednesday 2026-04-29 08:59:31 +1000 Graham Williams>
 ///
 /// Copyright (C) 2026, Software Innovation Institute, ANU.
 ///
 /// Licensed under the GNU General Public License, Version 3 (the "License").
 ///
-/// License: https://opensource.org/license/gpl-3-0.
+/// License: https://opensource.org/license/gpl-3-0
 //
 // This program is free software: you can redistribute it and/or modify it under
 // the terms of the GNU General Public License as published by the Free Software
@@ -21,11 +21,6 @@
 // You should have received a copy of the GNU General Public License along with
 // this program.  If not, see <https://opensource.org/license/gpl-3-0>.
 ///
-/// This main.dart can be used as a template for any solidui base app (and in
-/// general for any Flutter app). It contains no app specific settings but
-/// includes some settings that you may want to tune, like the minimum window
-/// size for desktop apps, etc.
-///
 /// Authors: Tony Chen, Graham Williams
 
 library;
@@ -38,10 +33,9 @@ import 'package:filepod/app.dart';
 import 'package:filepod/constants/app.dart';
 import 'package:filepod/utils/is_desktop.dart';
 
-// 20260402 gjw Below is the main entry point for the application.
-// For main() we require [async] because we asynchronously
-// [await] the window manager below. Often, `main()` will include just the
-// call [runApp].
+// 20260402 gjw Below is the main entry point for the application.  For main()
+// we require [async] because we asynchronously [await] the window manager as
+// below. Often, `main()` will include just the call [runApp].
 
 void main() async {
   // 20260402 gjw Optionally for development we utilise [debugPrint] to trace
@@ -73,7 +67,7 @@ void main() async {
       titleBarStyle: TitleBarStyle.normal,
     );
 
-    // 20260402 gjw Now we await the window being shown and recieving the focus,
+    // 20260402 gjw Now we await the window being shown and receiving the focus,
     // to then proceed to run the app.
 
     await windowManager.waitUntilReadyToShow(windowOptions, () async {
@@ -82,8 +76,8 @@ void main() async {
     });
   }
 
-  // 20260402 gjw The runApp() function takes the given Widget and makes it the root of the
-  // widget tree.
+  // 20260402 gjw The runApp() function takes the given Widget and makes it the
+  // root of the widget tree.
 
   runApp(const App());
 }

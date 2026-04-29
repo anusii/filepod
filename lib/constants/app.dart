@@ -1,6 +1,6 @@
-/// App-wide constants.
+/// FilePod - app-wide constants.
 ///
-// Time-stamp: <Friday 2025-11-21 19:02:53 +1100 Graham Williams>
+// Time-stamp: <Wednesday 2026-04-29 15:15:08 +1000 Graham Williams>
 ///
 /// Copyright (C) 2025-2026, Software Innovation Institute, ANU
 ///
@@ -28,7 +28,9 @@ library;
 
 import 'package:solidui/solidui.dart' show SolidInviteOthersConfig;
 
-const String appTitle = 'FilePod - Solid File Browser';
+/// Application title displayed as the window title.
+
+const String appTitle = 'FilePod - File Browser for Solid Pods';
 
 /// Public URL where FilePod is hosted. Used by the Invite Others
 /// feature to send a working link to the recipient.

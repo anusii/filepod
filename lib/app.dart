@@ -1,6 +1,6 @@
-/// The primary [MaterialApp] widget.
+/// FilePod - the primary [MaterialApp] widget.
 ///
-// Time-stamp: <Thursday 2026-04-02 10:58:22 +1100 Graham Williams>
+// Time-stamp: <Wednesday 2026-04-29 08:50:10 +1000 Graham Williams>
 ///
 /// Copyright (C) 2026, Software Innovation Institute, ANU.
 ///
@@ -29,10 +29,10 @@ import 'package:flutter/material.dart';
 
 import 'package:solidui/solidui.dart';
 
-import 'app_scaffold.dart';
-import 'constants/app.dart';
+import 'package:filepod/app_scaffold.dart';
+import 'package:filepod/constants/app.dart';
 
-// This widget is the root of the application.
+// 20260429 gjw This widget is the root of the application.
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -40,8 +40,11 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SolidThemeApp(
-      // Turn off debug banner for now.
+      // 20260429 gjw We can manually turn off the debug banner. It is turn off
+      // automatically for a `--release`.
+
       debugShowCheckedModeBanner: false,
+
       title: appTitle,
 
       theme: ThemeData(
@@ -50,6 +53,7 @@ class App extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
+
       home: SolidLogin(
         image: const AssetImage('assets/images/app_image.jpg'),
         logo: const AssetImage('assets/images/app_icon.png'),

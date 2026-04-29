@@ -4,8 +4,8 @@ Noted here are the high level changes for the app.  Each update
 includes a short user-oriented description.  The next release is 0.2
 following incremental updates through the 0.1.n series.
 
-You can run the app in your browser from the
-[**web**](https://filepod.solidcommunity.au) or else download and
+You can run the app in your
+[**browser**](https://filepod.solidcommunity.au) or else download and
 install locally the latest version from the [Solid Community
 AU](https://solidcommunity.au) or directly: for **Android** as
 [aab](https://solidcommunity.au/installers/filepod.aab) or
@@ -31,13 +31,15 @@ We make this project available for free so if you appreciate the app
 then please show some ❤️ and tap on the star at
 [GitHub](https://github.com/anusii/filepod) to support our work.
 
-This app is authored by Tony Chen.
+This app is authored by Tony Chen and Graham Williams.
 
 ## 0.2 Review and Fine Tune
 
++ Review and update the app [0.1.4 20260429 gjw]
++ Add user profile [0.1.3 20260421 tonypioneer]
 + Migrate to latest solidui for item counts [0.1.2 20260402 gjw]
 + Add icon build, fix lint issues, clean code [0.1.1 20260402 gjw]
 
-## 0.1 Initial Shell App
+## 0.1 Initial App
 
 + Initial template app [0.1.0 20260327 tonypioneer]
