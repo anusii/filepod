@@ -26,4 +26,39 @@
 
 library;
 
+import 'package:solidui/solidui.dart' show SolidInviteOthersConfig;
+
 const String appTitle = 'FilePod - Solid File Browser';
+
+/// Public URL where FilePod is hosted. Used by the Invite Others
+/// feature to send a working link to the recipient.
+/// TODO: [20260429 tchen] Replace the example URL below with a real URL.
+
+const String appUrl = 'https://filepod.togaware.com';
+
+/// Application-wide Invite Others configuration shared by the
+/// AppBar share button and the App Info dialog so that users can
+/// invite others to set up their POD and try FilePod.
+
+const SolidInviteOthersConfig inviteOthersConfig = SolidInviteOthersConfig(
+  applicationName: 'FilePod',
+  appUrl: appUrl,
+  appDescription: 'manage and share files on your own data vault using '
+      'FilePod',
+  messageTemplate: '''
+You might like to try the {appName} app, available online here:
+
+{appUrl}
+
+Signing into {appName} will set up your data vault so you can manage and exchange files privately with other Solid users.''',
+  subject: 'Try the FilePod app on your Solid POD',
+  tooltip: '''
+
+  **Invite Others**
+
+  Tap to invite someone else to try FilePod. You can copy the
+  invitation to the clipboard or share it through any messaging app
+  installed on your device.
+
+  ''',
+);

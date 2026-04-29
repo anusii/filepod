@@ -32,7 +32,7 @@ dependency_overrides:
   solidui:
     git:
       url: https://github.com/anusii/solidui.git
-      ref: dev
+      ref: tony/276_invite_recipients
   solidpod:
     git:
       url: https://github.com/anusii/solidpod.git
