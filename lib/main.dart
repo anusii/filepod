@@ -25,13 +25,19 @@
 
 library;
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-import 'package:solidui/solidui.dart';
 import 'package:window_manager/window_manager.dart';
 
 import 'package:filepod/app.dart';
 import 'package:filepod/constants/app.dart';
+
+bool get _isDesktop =>
+    !kIsWeb &&
+    (defaultTargetPlatform == TargetPlatform.linux ||
+        defaultTargetPlatform == TargetPlatform.macOS ||
+        defaultTargetPlatform == TargetPlatform.windows);
 
 // 20260402 gjw Below is the main entry point for the application.  For main()
 // we require [async] because we asynchronously [await] the window manager as
@@ -53,7 +59,7 @@ void main() async {
 
   WidgetsFlutterBinding.ensureInitialized();
 
-  if (isDesktop) {
+  if (_isDesktop) {
     await windowManager.ensureInitialized();
 
     // 20260402 gjw For our desktop app we tune various window oriented
