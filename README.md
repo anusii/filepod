@@ -1,4 +1,4 @@
-# File Pod - A file browsers for your Solid Pod
+# File Pod - A File Browser For Your Solid Pod
 
 [![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)](https://flutter.dev)
 [![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev)
@@ -15,9 +15,9 @@
 browsing, uploading, and downloading files stored on your personal
 online data store ([Pod](https://solidproject.org/about)), providing a
 familiar file-management experience for the decentralised web. The app
-is implemented by [Togaware](https://togaware.com)'s [Graham
-Williams](https://togaware.com/Graham.Williams.html) pair coding with
-[Claude Code](https://claude.com/product/claude-code) using
+is supported by the [Software Innovation
+Institute](https://sii.anu.edu.au) and implemented by Tony Chen and
+[Graham Williams](https://togaware.com/Graham.Williams.html) using
 [Flutter](https://flutter.dev)'s
 [SolidUI](https://github.com/anusii/solidui) package for cross
 platform development.
@@ -297,7 +297,7 @@ issues at [GitHub Issues](https://github.com/anusii/filepod/issues).
 The authors of the package will respond to issues as best we can.
 
 <!-- markdownlint-disable MD036 -->
-*Time-stamp: <Wednesday 2026-04-29 14:03:39 +1000 Graham Williams>*
+*Time-stamp: <Thursday 2026-04-30 08:29:19 +1000 Graham Williams>*
 <!-- markdownlint-enable MD036 -->
 
 <!-- markdownlint-disable MD053 -->
