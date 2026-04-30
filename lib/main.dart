@@ -1,6 +1,6 @@
 /// FilePod - file browser for your solid pod main entry point.
 ///
-// Time-stamp: <Wednesday 2026-04-29 08:59:31 +1000 Graham Williams>
+// Time-stamp: <Thursday 2026-04-30 12:35:10 +1000 Graham Williams>
 ///
 /// Copyright (C) 2026, Software Innovation Institute, ANU.
 ///
@@ -27,11 +27,11 @@ library;
 
 import 'package:flutter/material.dart';
 
+import 'package:solidui/solidui.dart';
 import 'package:window_manager/window_manager.dart';
 
 import 'package:filepod/app.dart';
 import 'package:filepod/constants/app.dart';
-import 'package:filepod/utils/is_desktop.dart';
 
 // 20260402 gjw Below is the main entry point for the application.  For main()
 // we require [async] because we asynchronously [await] the window manager as
