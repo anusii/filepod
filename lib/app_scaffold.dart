@@ -1,6 +1,6 @@
 /// FilePod - application scaffold configuration.
 ///
-// Time-stamp: <Wednesday 2026-04-29 14:19:23 +1000 Graham Williams>
+// Time-stamp: <Friday 2026-05-01 10:50:28 +1000 Graham Williams>
 ///
 /// Copyright (C) 2026, Software Innovation Institute, ANU.
 ///
