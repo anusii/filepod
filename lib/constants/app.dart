@@ -34,9 +34,8 @@ const String appTitle = 'FilePod - File Browser for Solid Pods';
 
 /// Public URL where FilePod is hosted. Used by the Invite Others
 /// feature to send a working link to the recipient.
-/// TODO: [20260429 tchen] Replace the example URL below with a real URL.
 
-const String appUrl = 'https://filepod.togaware.com';
+const String appUrl = 'https://filepod.solidcommunity.au/';
 
 /// Application-wide Invite Others configuration shared by the
 /// AppBar share button and the App Info dialog so that users can
