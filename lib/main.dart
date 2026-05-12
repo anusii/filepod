@@ -1,6 +1,6 @@
 /// FilePod - file browser for your solid pod main entry point.
 ///
-// Time-stamp: <Thursday 2026-04-30 12:35:10 +1000 Graham Williams>
+// Time-stamp: <Tuesday 2026-05-12 20:17:00 +1000 Graham Williams>
 ///
 /// Copyright (C) 2026, Software Innovation Institute, ANU.
 ///
@@ -25,19 +25,13 @@
 
 library;
 
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
+import 'package:solidui/solidui.dart';
 import 'package:window_manager/window_manager.dart';
 
 import 'package:filepod/app.dart';
 import 'package:filepod/constants/app.dart';
-
-bool get _isDesktop =>
-    !kIsWeb &&
-    (defaultTargetPlatform == TargetPlatform.linux ||
-        defaultTargetPlatform == TargetPlatform.macOS ||
-        defaultTargetPlatform == TargetPlatform.windows);
 
 // 20260402 gjw Below is the main entry point for the application.  For main()
 // we require [async] because we asynchronously [await] the window manager as
@@ -59,7 +53,7 @@ void main() async {
 
   WidgetsFlutterBinding.ensureInitialized();
 
-  if (_isDesktop) {
+  if (isDesktop) {
     await windowManager.ensureInitialized();
 
     // 20260402 gjw For our desktop app we tune various window oriented
