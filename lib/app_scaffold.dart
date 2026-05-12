@@ -1,6 +1,6 @@
 /// FilePod - application scaffold configuration.
 ///
-// Time-stamp: <Friday 2026-05-01 11:36:56 +1000 Graham Williams>
+// Time-stamp: <Tuesday 2026-05-12 14:45:00 +1000 Tony Chen>
 ///
 /// Copyright (C) 2026, Software Innovation Institute, ANU.
 ///
@@ -42,8 +42,6 @@ class AppScaffold extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-
     return SolidScaffold(
       controller: _scaffoldController,
       hideNavRail: false,
@@ -84,13 +82,12 @@ class AppScaffold extends StatelessWidget {
       ],
       appBar: SolidAppBarConfig(
         title: appTitle.split(' - ')[0],
-        versionConfig: SolidVersionConfig(
+        versionConfig: const SolidVersionConfig(
           changelogUrl: 'https://github.com/anusii/filepod/blob/dev/'
               'CHANGELOG.md',
           showDate: true,
-          userTextStyle: TextStyle(
-            color: theme.colorScheme.onSurface,
-          ),
+          showUpdateButton: true,
+          downloadUrl: 'https://github.com/anusii/filepod/releases',
         ),
         actions: [
           SolidAppBarAction(
