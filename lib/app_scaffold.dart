@@ -1,6 +1,6 @@
 /// FilePod - application scaffold configuration.
 ///
-// Time-stamp: <Friday 2026-05-01 10:50:28 +1000 Graham Williams>
+// Time-stamp: <Tuesday 2026-05-12 17:49:04 +1000 Graham Williams>
 ///
 /// Copyright (C) 2026, Software Innovation Institute, ANU.
 ///
@@ -42,10 +42,11 @@ class AppScaffold extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-
     return SolidScaffold(
       controller: _scaffoldController,
+      hideNavRail: false,
+      enableProfile: true,
+      onLogout: (context) => SolidAuthHandler.instance.handleLogout(context),
       menu: const [
         SolidMenuItem(
           icon: Icons.home,
@@ -81,13 +82,12 @@ class AppScaffold extends StatelessWidget {
       ],
       appBar: SolidAppBarConfig(
         title: appTitle.split(' - ')[0],
-        versionConfig: SolidVersionConfig(
+        versionConfig: const SolidVersionConfig(
           changelogUrl: 'https://github.com/anusii/filepod/blob/dev/'
               'CHANGELOG.md',
           showDate: true,
-          userTextStyle: TextStyle(
-            color: theme.colorScheme.onSurface,
-          ),
+          showUpdateButton: true,
+          downloadUrl: 'https://solidcommunity.au/installers/',
         ),
         actions: [
           SolidAppBarAction(
