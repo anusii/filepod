@@ -1,6 +1,6 @@
 /// FilePod - application scaffold configuration.
 ///
-// Time-stamp: <Tuesday 2026-05-12 14:45:00 +1000 Tony Chen>
+// Time-stamp: <Tuesday 2026-05-12 17:49:04 +1000 Graham Williams>
 ///
 /// Copyright (C) 2026, Software Innovation Institute, ANU.
 ///
@@ -87,7 +87,7 @@ class AppScaffold extends StatelessWidget {
               'CHANGELOG.md',
           showDate: true,
           showUpdateButton: true,
-          downloadUrl: 'https://github.com/anusii/filepod/releases',
+          downloadUrl: 'https://solidcommunity.au/installers/',
         ),
         actions: [
           SolidAppBarAction(
