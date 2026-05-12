@@ -1,6 +1,6 @@
 /// FilePod - application scaffold configuration.
 ///
-// Time-stamp: <Friday 2026-05-01 10:50:28 +1000 Graham Williams>
+// Time-stamp: <Friday 2026-05-01 11:36:56 +1000 Graham Williams>
 ///
 /// Copyright (C) 2026, Software Innovation Institute, ANU.
 ///
@@ -46,6 +46,9 @@ class AppScaffold extends StatelessWidget {
 
     return SolidScaffold(
       controller: _scaffoldController,
+      hideNavRail: false,
+      enableProfile: true,
+      onLogout: (context) => SolidAuthHandler.instance.handleLogout(context),
       menu: const [
         SolidMenuItem(
           icon: Icons.home,
@@ -145,9 +148,6 @@ class AppScaffold extends StatelessWidget {
         enabled: true,
         showInAppBarActions: true,
       ),
-      hideNavRail: false,
-      enableProfile: true,
-      onLogout: (context) => SolidAuthHandler.instance.handleLogout(context),
       child: const Home(title: appTitle),
     );
   }
