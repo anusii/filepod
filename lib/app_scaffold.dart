@@ -145,6 +145,10 @@ class AppScaffold extends StatelessWidget {
         enabled: true,
         showInAppBarActions: true,
       ),
+      inviteConfig: inviteOthersConfig,
+      hideNavRail: false,
+      enableProfile: true,
+      onLogout: (context) => SolidAuthHandler.instance.handleLogout(context),
       child: const Home(title: appTitle),
     );
   }
