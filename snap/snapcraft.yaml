@@ -1,5 +1,5 @@
 name: filepod
-version: 0.1.5
+version: 0.1.6
 summary: A file browser for your Solid Pod Data Vault.
 description: |
   FilePod is a demonstration and simple template app that provides a

@@ -1,19 +1,24 @@
 #!/bin/bash
 
+# 20260512 gjw Why not symlink when the files are identical?Synlinks
+# are not github friendly though, being a text file containg the path
+# to the linked file. But these IDENTICAL files are stored in another
+# repo so let's go with that one copy principle.
+#
 # 20260216 gjw Pairwise compare files and run meld to update.
 
 # set -x
 
 APP=$(basename "$(pwd)")
 
-SCRIPTS=${HOME}/projects/scripts/flutter
+SCRIPTS=${HOME}/projects/scriptsbb/flutter
 FILES=(
+    Makefile ${SCRIPTS}/Makefile.tmpl
     .gitignore ${SCRIPTS}/gitignore
     .pubignore ${SCRIPTS}/pubignore
     .github/workflows/ci.yaml ${SCRIPTS}/github/workflows/ci.yaml
     .github/workflows/installers.yaml ${SCRIPTS}/github/workflows/installers.yaml
     .github/pull_request_template.md ${SCRIPTS}/github/pull_request_template.md
-    Makefile ${SCRIPTS}/Makefile.tmpl
     installers/deb.sh ${SCRIPTS}/installers/deb.sh
     installers/update.sh ${SCRIPTS}/installers/update.sh
     support/modules.mk  ${SCRIPTS}/../support/modules.mk
@@ -58,6 +63,10 @@ for ((i=0; i < length; i+=2)); do
 		meld "$f1" "$f2" 2> /dev/null
 	    fi
 
+	# 20260512 gjw For the common version of this for Makefile
+	# import a local.mk from the new make folder to define REPO,
+	# RLOC, and DWLD
+	#
 	# 20260306 gjw For the Makefile we expect the REPO, RLOC, and
 	# DWLD to differ so ignore those lines.
 
@@ -108,7 +117,7 @@ for ((i=0; i < length; i+=2)); do
 	# 20260306 gjw Otherwise do a straightforward comparison.
 
         else
-	    if [[ "$f1" == *install* ]] && ! $IS_APP; then
+	    if [[ "$f1" == *install* ]] && [ "$IS_APP" = false ]; then
 		echo "SKIP      $f1 $f2"
 	    else
 		if cmp -s "$f1" "$f2"; then
@@ -120,7 +129,7 @@ for ((i=0; i < length; i+=2)); do
 	    fi
 	fi
     else
-	if [[ "$f1" == *install* ]] && echo ! $IS_APP; then
+	if [[ "$f1" == *install* ]] && [ "$IS_APP" = false ]; then
 	    echo "SKIP      $f1 $f2"
 	else
 	    if [ ! -f "$f1" ] && [ -f "$f2" ]; then

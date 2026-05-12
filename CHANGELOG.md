@@ -35,6 +35,7 @@ This app is authored by Tony Chen and Graham Williams.
 
 ## 0.2 Review and Fine Tune
 
++ Add an UPDATE button [0.1.6 20260513 gjw]
 + Updated solidui for is_desktop() [0.1.5 20260430 gjw]
 + Review and update the app [0.1.4 20260429 gjw]
 + Add user profile [0.1.3 20260421 tonypioneer]
