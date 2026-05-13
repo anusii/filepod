@@ -1,1 +1,1 @@
-/home/gjw/projects/scripts/support/update.sh
+${HOME}/git/githuib/gjwgit/scripts/support/update.sh
