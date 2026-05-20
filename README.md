@@ -1,5 +1,7 @@
 # File Pod - A File Browser For Your Solid Pod
 
+> File Management with Secure and Private Solid Pod Storage
+
 [![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)](https://flutter.dev)
 [![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev)
 
@@ -14,8 +16,11 @@
 [FilePod](https://anusii.github.io/filepod/) is a file browser for
 browsing, uploading, and downloading files stored on your personal
 online data store ([Pod](https://solidproject.org/about)), providing a
-familiar file-management experience for the decentralised web. The app
-is supported by the [Software Innovation
+familiar file-management experience for the decentralised web. Your
+Pod sits in a personal Data Vault on a Solid server in the cloud,
+where everything is stored encrypted and stays within the Pod. No
+data leaves the Pod unless you explicitly download it, so you stay in
+control. The app is supported by the [Software Innovation
 Institute](https://sii.anu.edu.au) and implemented by Tony Chen and
 [Graham Williams](https://togaware.com/Graham.Williams.html) using
 [Flutter](https://flutter.dev)'s
@@ -29,13 +34,13 @@ server and link it to your app.
 
 We make this project available for free so if you appreciate the app
 then please show some ❤️ and tap on the star at
-[GitHub](https://github.com/anusii/filepod) to support our work.  See
+[GitHub](https://github.com/anusii/filepod) to support our work. See
 the [AU Solid Community](https://solidcommunity.au) **showcase** for
 many more apps using the Solid ecosystem.
 
 The latest version of the app can be run online at
 [filepod.solidcommunity.au](https://filepod.solidcommunity.au) with no
-installation required though requiring a Bluelink login, or downloaded
+installation required though requiring a Solid login, or downloaded
 and installed for your platform from the [Solid Community
 AU](https://solidcommunity.au) repository:
 
@@ -67,57 +72,19 @@ a Pull Request. The app is implemented in
 [Flutter](https://flutter.dev) using
 [solidui](https://pub.dev/packages/solidui). Thanks.
 
-## A SolidUI Template
+## Introduction
 
-This app can be used as a template for any solidui based app (and in
-general for any Flutter app). It contains no app specific widgets but
-includes some settings that you may want to tune, like the minimum
-window size for desktop apps, etc. The template simply wraps the
-solidui SolidFile() file browser widget which you can replace with
-your own widgets for your app.
+FilePod gives you a familiar file-manager experience for your Solid
+Pod. You can browse folders, upload files from your local device,
+download files back, and view the entire contents of your Pod from
+the root — all without leaving your Pod's secure, encrypted storage.
+The app is multi-platform so you can install it for your desktop or
+mobile device, or run it directly through a web browser, all
+accessing the same files in your Pod.
 
-## Table of Contents
-
-+ [Features](#features)
-+ [Screenshots](#screenshots)
-+ [Requirements](#requirements)
-+ [Installation](#installation)
-+ [Getting Started](#getting-started)
-+ [Application Structure](#application-structure)
-+ [Contributing](#contributing)
-+ [Licence](#licence)
-
-## Features
-
-+ **Solid POD File Browsing** — Navigate folders and files stored on
-  your Solid POD with an intuitive, responsive interface.
-
-+ **File Upload** — Upload files from your local device directly to
-  your POD.
-
-+ **File Download** — Download files from your POD to your local
-  device.
-
-+ **All POD Files View** — Browse every folder and file on your POD
-  from the root, giving a complete overview of your stored data.
-
-+ **Solid Authentication** — Secure login against a Solid server
-  using the `SolidLogin` widget.
-
-+ **Security Key Management** — Manage encryption keys for private
-  data stored on your POD.
-
-+ **Responsive Navigation** — Automatically switches between a
-  vertical navigation rail (wide screens) and a collapsible navigation
-  drawer (narrow screens).
-
-+ **Theme Switching** — Toggle between light, dark, and system theme
-  modes.
-
-+ **Cross-Platform** — Runs on macOS, Linux, Windows, Android, iOS,
-  and the Web.
-
-## Screenshots
+FilePod also serves as a reference template for any SolidUI-based
+Flutter app — wrapping the SolidUI `SolidFile()` widget with a
+typical SolidScaffold setup that you can adapt for your own project.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -131,160 +98,143 @@ your own widgets for your app.
  alt="Home page of FilePod" width="600">
 </div>
 
-## Requirements
+<!-- markdownlint-enable MD033 -->
 
-+ Flutter SDK: `>=3.10.0`
-+ Dart SDK: `>=3.0.0 <4.0.0`
+---
 
-### Dependencies
+## Quick start
 
-FilePod relies on the following key packages:
+The typical workflow is:
 
-+ [`solidui`](https://github.com/anusii/solidui) — UI components for
-  Solid applications
-+ [`solidpod`](https://github.com/anusii/solidpod) — Solid POD
-  integration
-+ `shared_preferences` — Local storage for settings
-+ `markdown_tooltip` — Markdown-enabled tooltips
-+ `window_manager` — Desktop window management
+1. **Sign in** to your Solid Pod using the SolidLogin screen on first
+   launch.
+2. **Browse** to **App Files** to see files specific to FilePod, or
+   to **All POD Files** to see your entire Pod from the root.
+3. **Upload** a file from your local device by tapping the upload
+   action in the file browser.
+4. **Download** a file by tapping it (or its download action) to save
+   a copy back to your local device.
 
-## Installation
+---
 
-### Clone the Repository
+## The three screens
 
-```bash
-git clone https://github.com/anusii/filepod.git
-cd filepod
-```
+A left-hand navigation rail (or collapsible drawer on narrow screens)
+gives you:
 
-### Install Dependencies
+### Home
 
-```bash
-flutter pub get
-```
+Welcome page with a quick feature overview and pointers to the file
+browser views. Tap the home icon at any time to return here.
 
-## Getting Started
+### App Files
 
-### Running the Application
+Browse files in the FilePod-specific folder on your Pod. Useful when
+other Solid apps share the same Pod and you want a focused view of
+just FilePod's files.
 
-```bash
-# macOS
-flutter run -d macos
+### All POD Files
 
-# Linux
-flutter run -d linux
+Browse every folder and file on your Pod, starting at the root.
+Gives a complete overview of everything stored in your Pod —
+including files created by other Solid apps.
 
-# Windows
-flutter run -d windows
+---
 
-# Web
-flutter run -d chrome
-```
+## Working with files
 
-### Using the Makefile
+The file browser supports the actions you'd expect from a desktop
+file manager:
 
-A `Makefile` is provided for common development tasks:
++ **Tap a folder** — open it and see its contents.
++ **Tap a file** — preview, download, or open it (depending on the
+  file type).
++ **Upload** — pick a file from your local device and copy it into
+  the current folder.
++ **Download** — save a file from your Pod back to your local
+  device.
++ **Breadcrumb path** — navigate back up the folder hierarchy at any
+  point.
 
-```bash
-# Run on macOS
-make macos
+The navigation automatically adapts to window size: a vertical
+navigation rail on wide screens and a collapsible drawer on narrow
+ones.
 
-# Run on Linux
-make linux
+---
 
-# Run code analysis
-make analyze
+## Sharing files with others
 
-# Format code
-make format
+Use the standard Solid permission flow to share files or folders
+with another Pod owner. The recipient adds your WebID to their app
+and gains read or read/write access, depending on the permission
+you grant.
 
-# Full preparation for a pull request
-make prep
-```
+The **invite** action in the app bar offers a quick way to invite
+another user to start using their own Pod and access shared
+resources from yours.
 
-## Application Structure
+---
 
-```text
-lib/
-├── main.dart              # Main entry point
-├── app.dart               # Root App widget with SolidThemeApp and SolidLogin
-├── app_scaffold.dart      # SolidScaffold configuration (menu, appBar, statusBar)
-├── home.dart              # Home page widget
-├── constants/
-│   └── app.dart           # Application-wide constants
-├── screens/
-│   └── all_pod_files_page.dart  # Browse all POD files from root
-└── utils/
-    └── is_desktop.dart    # Desktop platform detection utility
-```
+## Security keys
 
-### Key Components
+Some files on your Pod are encrypted for privacy. FilePod manages
+the security key needed to read and write encrypted data through
+the standard SolidPod flow. The status bar at the bottom of the
+window shows your current security-key state — if a key is
+required, tap the indicator to enter your password and the app will
+unlock the relevant files automatically.
 
-#### `main.dart`
+---
 
-Application entry point. Initialises Flutter bindings, configures
-the window manager for desktop platforms, and launches the `App()`
-widget.
+## Theme
 
-#### `app.dart`
+A theme toggle in the app bar lets you switch between **light**,
+**dark**, and **system** modes. The choice is remembered across
+sessions.
 
-Root widget implementing `SolidThemeApp` with theme configuration
-and `SolidLogin` for Solid server authentication. After login, the
-`AppScaffold` is displayed.
+---
 
-#### `app_scaffold.dart`
+## About info
 
-Configures the `SolidScaffold` with:
+Tap the **info** (ℹ) button in the top app bar at any time to see a
+brief about-the-app dialog with the version number, key features,
+and links to the GitHub repository and the Australian Solid
+Community.
 
-+ **Menu items** — Home, Files, and All POD Files navigation
-+ **App bar** — Title, version information, and file browser action
-+ **Status bar** — Server info, login status, and security key status
-+ **About dialogue** — Application information and links
-+ **Theme toggle** — Light/dark/system mode switching
-+ **Logout** — Secure session termination
+---
 
-#### `home.dart`
+## Data and privacy
 
-Welcome page displaying a feature overview and usage guidance.
+All files live in your Solid Pod, in the standard folder structure
+maintained by the Pod server. You authenticate to your Pod when you
+start the app, and any encrypted files are handled through the
+SolidPod security-key flow shown in the status bar.
 
-#### `screens/all_pod_files_page.dart`
+If you log into a fresh Pod, FilePod doesn't create any specific
+files of its own — it simply browses whatever folders and files
+already exist on the Pod. Nothing about your files ever leaves
+your Pod unless you explicitly download a file to your local
+device.
 
-A dedicated page that browses all folders and files on the POD
-from the root, providing a complete view of the user's stored data.
+---
 
-## Contributing
+## Troubleshooting
 
-We welcome contributions! Please follow these guidelines:
+**The browser shows "loading…" forever after login.**
+The status bar at the bottom of the window shows your security-key
+state. If the key is missing, tap it and provide your password —
+encrypted file listings appear automatically once the key is saved.
 
-1. **Fork** the repository and create a feature branch from `dev`.
-2. **Follow** the [coding style
-   guidelines](https://survivor.togaware.com/gnulinux/flutter-style.html).
-3. **Run** `make prep` before submitting a pull request.
-4. **Submit** a pull request using the provided
-   [PR template](.github/pull_request_template.md).
+**Uploaded files don't appear immediately.**
+Pull down (or refresh) the folder view to fetch the latest listing
+from your Pod. Some Solid servers cache directory listings briefly.
 
-### Reporting Issues
+**Files I expected to be shared aren't visible.**
+The other Pod owner needs to have granted your WebID access to
+that resource. Check **All POD Files** to confirm what's actually
+on your Pod, and ask the owner to verify the permissions.
 
-+ **Bug reports**: Use the [bug report
-  template](.github/ISSUE_TEMPLATE/bug_report.md).
-+ **Feature requests**: Use the [feature request
-  template](.github/ISSUE_TEMPLATE/feature_request.md).
-
-### Development Setup
-
-```bash
-git clone https://github.com/anusii/filepod.git
-cd filepod
-flutter pub get
-flutter run -d macos
-```
-
-## Licence
-
-Copyright (C) 2026, Software Innovation Institute, ANU.
-
-Licensed under the GNU General Public License, Version 3.
-See [LICENSE](LICENSE) for details.
+---
 
 ## Authors
 
@@ -294,19 +244,11 @@ See [LICENSE](LICENSE) for details.
 For more information about Solid and PODs, visit
 [solidproject.org](https://solidproject.org).
 
-## Additional Information
+---
 
-The source code can be accessed via the [GitHub
-repository](https://github.com/anusii/filepod). You can also file
-issues at [GitHub Issues](https://github.com/anusii/filepod/issues).
-The authors of the package will respond to issues as best we can.
+## License
 
-<!-- markdownlint-disable MD036 -->
-*Time-stamp: <Sunday 2026-05-17 17:39:49 +1000 Graham Williams>*
-<!-- markdownlint-enable MD036 -->
+GNU General Public License v3. See `LICENSE` or
+<https://opensource.org/license/gpl-3-0>.
 
-<!-- markdownlint-disable MD053 -->
-[comment]: # (Local Variables:)
-[comment]: # (time-stamp-line-limit: -8)
-[comment]: # (End:)
-<!-- markdownlint-enable MD053 -->
+Copyright (C) 2026, Software Innovation Institute, ANU.
