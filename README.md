@@ -22,6 +22,11 @@ Institute](https://sii.anu.edu.au) and implemented by Tony Chen and
 [SolidUI](https://github.com/anusii/solidui) package for cross
 platform development.
 
+Solid Pods are a new approach to handling your personal data on the
+World Wide Web and is the latest innovation from the inventor of the
+WWW, Sir Tim Berners-Lee. Obtain a Pod for yourself on any Solid
+server and link it to your app.
+
 We make this project available for free so if you appreciate the app
 then please show some ❤️ and tap on the star at
 [GitHub](https://github.com/anusii/filepod) to support our work.  See
@@ -297,7 +302,7 @@ issues at [GitHub Issues](https://github.com/anusii/filepod/issues).
 The authors of the package will respond to issues as best we can.
 
 <!-- markdownlint-disable MD036 -->
-*Time-stamp: <Thursday 2026-04-30 08:29:19 +1000 Graham Williams>*
+*Time-stamp: <Sunday 2026-05-17 17:39:49 +1000 Graham Williams>*
 <!-- markdownlint-enable MD036 -->
 
 <!-- markdownlint-disable MD053 -->
