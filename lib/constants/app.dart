@@ -26,11 +26,22 @@
 
 library;
 
-import 'package:solidui/solidui.dart' show SolidInviteOthersConfig;
+import 'package:solidui/solidui.dart'
+    show SolidFileUploadConfig, SolidInviteOthersConfig;
 
 /// Application title displayed as the window title.
 
 const String appTitle = 'FilePod - File Browser for Solid Pods';
+
+/// Shared upload configuration for every `SolidFile` view in FilePod.
+///
+/// Restricts the file picker (both the toolbar Upload button and the side
+/// upload panel) to Markdown and plain text files. Extensions are matched
+/// case-insensitively by SolidUI, so users may still pick `.MD` / `.TXT`.
+
+const SolidFileUploadConfig filepodUploadConfig = SolidFileUploadConfig(
+  allowedExtensions: ['md', 'txt'],
+);
 
 /// Public URL where FilePod is hosted. Used by the Invite Others
 /// feature to send a working link to the recipient.

@@ -29,6 +29,8 @@ import 'package:flutter/material.dart';
 
 import 'package:solidui/solidui.dart';
 
+import 'package:filepod/constants/app.dart';
+
 class BrowseFiles extends StatelessWidget {
   const BrowseFiles({super.key});
 
@@ -37,6 +39,7 @@ class BrowseFiles extends StatelessWidget {
     return const SolidFile(
       currentPath: SolidFile.podRoot,
       friendlyFolderName: 'All Files and Folders',
+      uploadConfig: filepodUploadConfig,
     );
   }
 }
