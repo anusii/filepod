@@ -58,6 +58,19 @@ class App extends StatelessWidget {
         image: const AssetImage('assets/images/app_image.jpg'),
         logo: const AssetImage('assets/images/app_icon.png'),
         title: appTitle.replaceAll(' - ', '\n'),
+        clientId:
+            'https://solidcommunity.au/apps/filepod/client-profile.jsonld',
+        redirectUris: [
+          'https://solidcommunity.au/apps/filepod/redirect.html',
+          'http://localhost:4400/redirect',
+          'com.example.filepod://redirect',
+        ],
+        postLogoutRedirectUris: [
+          'https://solidcommunity.au/apps/filepod/redirect.html',
+          'http://localhost:4400/redirect',
+          'com.example.filepod://redirect',
+        ],
+        autoLogin: true,
         child: appScaffold,
       ),
     );
