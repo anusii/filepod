@@ -1,6 +1,6 @@
 /// FilePod - the primary [MaterialApp] widget.
 ///
-// Time-stamp: <Wednesday 2026-04-29 08:50:10 +1000 Graham Williams>
+// Time-stamp: <Sunday 2026-05-31 06:29:44 +1000 Graham Williams>
 ///
 /// Copyright (C) 2026, Software Innovation Institute, ANU.
 ///
@@ -70,7 +70,6 @@ class App extends StatelessWidget {
           'http://localhost:4400/redirect',
           'com.example.filepod://redirect',
         ],
-        autoLogin: true,
         child: appScaffold,
       ),
     );
