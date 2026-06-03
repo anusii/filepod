@@ -1,8 +1,8 @@
-# File Pod Change Log
+# FilePod Change Log
 
 Noted here are the high level changes for the app.  Each update
-includes a short user-oriented description.  The next release is 0.2
-following incremental updates through the 0.1.n series.
+includes a short user-oriented description.  The next release is 1.1
+following incremental updates through the 1.0.n series.
 
 You can run the app in your
 [**browser**](https://filepod.solidcommunity.au) or else download and
@@ -31,7 +31,12 @@ We make this project available for free so if you appreciate the app
 then please show some ❤️ and tap on the star at
 [GitHub](https://github.com/anusii/filepod) to support our work.
 
-This app is authored by Tony Chen and Graham Williams.
+This app is authored by Tony Chen and [Graham
+Williams](https://togaware.com/Graham.Williams.html).
+
+## 1.0
+
+Updated with certified oidc solid_auth [1.0.0 20260604 gjw]
 
 ## 0.2 Review and Fine Tune
 
