@@ -70,7 +70,7 @@ class AppScaffold extends StatelessWidget {
             Tap here to browse the files on your POD for this app.
 
             ''',
-          child: SolidFile(),
+          child: SolidFile(uploadConfig: filepodUploadConfig),
         ),
         SolidMenuItem(
           icon: Icons.storage,
@@ -97,7 +97,7 @@ class AppScaffold extends StatelessWidget {
           SolidAppBarAction(
             icon: Icons.folder,
             onPressed: () => _scaffoldController.navigateToSubpage(
-              const SolidFile(),
+              const SolidFile(uploadConfig: filepodUploadConfig),
             ),
             tooltip: 'Files',
           ),
