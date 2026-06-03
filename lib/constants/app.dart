@@ -1,6 +1,6 @@
 /// FilePod - app-wide constants.
 ///
-// Time-stamp: <Wednesday 2026-04-29 15:15:08 +1000 Graham Williams>
+// Time-stamp: <Thursday 2026-06-04 08:02:55 +1000 Graham Williams>
 ///
 /// Copyright (C) 2025-2026, Software Innovation Institute, ANU
 ///
@@ -44,14 +44,17 @@ const String appUrl = 'https://filepod.solidcommunity.au/';
 const SolidInviteOthersConfig inviteOthersConfig = SolidInviteOthersConfig(
   applicationName: 'FilePod',
   appUrl: appUrl,
-  appDescription: 'manage and share files on your own data vault using '
-      'FilePod',
+  appDescription:
+      'manage/share resources hosted on your Solid server using FilePod',
   messageTemplate: '''
 You might like to try the {appName} app, available online here:
 
 {appUrl}
 
-Signing into {appName} will set up your data vault so you can manage and exchange files privately with other Solid users.''',
+Signing into {appName} will set up your data vault so you can manage and
+exchange files privately with other Solid users.
+
+''',
   subject: 'Try the FilePod app on your Solid POD',
   tooltip: '''
 

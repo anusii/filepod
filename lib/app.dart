@@ -1,6 +1,6 @@
-/// FilePod - the primary [MaterialApp] widget.
+/// FilePod - orchestrate the primary login widget.
 ///
-// Time-stamp: <Sunday 2026-05-31 06:29:44 +1000 Graham Williams>
+// Time-stamp: <Thursday 2026-06-04 07:55:55 +1000 Graham Williams>
 ///
 /// Copyright (C) 2026, Software Innovation Institute, ANU.
 ///
@@ -32,7 +32,9 @@ import 'package:solidui/solidui.dart';
 import 'package:filepod/app_scaffold.dart';
 import 'package:filepod/constants/app.dart';
 
-// 20260429 gjw This widget is the root of the application.
+// 20260429 gjw This widget is the root of the application. On startup it will
+// call upon [SolidLogin] to connect to the user's Pod stored within the user's
+// data vault on their chosen Solid server.
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -40,8 +42,8 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SolidThemeApp(
-      // 20260429 gjw We can manually turn off the debug banner. It is turn off
-      // automatically for a `--release`.
+      // 20260429 gjw We can manually turn off the debug banner. It is turned
+      // off automatically for a `flutter --release`.
 
       debugShowCheckedModeBanner: false,
 
@@ -61,11 +63,6 @@ class App extends StatelessWidget {
         clientId:
             'https://solidcommunity.au/apps/filepod/client-profile.jsonld',
         redirectUris: [
-          'https://solidcommunity.au/apps/filepod/redirect.html',
-          'http://localhost:4400/redirect',
-          'com.example.filepod://redirect',
-        ],
-        postLogoutRedirectUris: [
           'https://solidcommunity.au/apps/filepod/redirect.html',
           'http://localhost:4400/redirect',
           'com.example.filepod://redirect',

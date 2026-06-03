@@ -1,4 +1,4 @@
-/// The application's home page.
+/// FilePod - the application introductory home page.
 ///
 /// Copyright (C) 2026, Software Innovation Institute, ANU.
 ///
@@ -19,7 +19,7 @@
 // You should have received a copy of the GNU General Public License along with
 // this program. If not, see <https://www.gnu.org/licenses/gpl-3.0.html>.
 ///
-/// Authors: Tony Chen
+/// Authors: Tony Chen, Graham Williams
 
 library;
 
@@ -59,18 +59,24 @@ class _HomeState extends State<Home> {
                 ),
                 const SizedBox(height: 24),
                 Text(
-                  'Welcome to FilePod!\n\n'
-                  'FilePod is a Solid file browser that lets you manage '
-                  'files on your personal online data store (POD).\n\n'
-                  'Key features:\n\n'
-                  '• Browse files and folders on your Solid POD\n'
-                  '• Upload files to your POD\n'
-                  '• Download files from your POD\n'
-                  '• View all POD files from the root\n'
-                  '• Security key management for encrypted data\n'
-                  '• Theme switching (light/dark/system)\n'
-                  '• Responsive navigation (rail ↔ drawer)\n\n'
-                  'Use the navigation menu to explore your POD files!',
+                  '''
+Welcome to FilePod!
+
+FilePod is a Solid file browser that lets you manage
+files on your personal online data store (POD).
+
+Key features:
+
+• Browse files and folders on your Solid POD
+• Upload files to your POD
+• Download files from your POD
+• View all POD files from the root
+• Security key management for encrypted data
+• Theme switching (light/dark/system)
+• Responsive navigation (rail ↔ drawer)
+
+Use the navigation menu to explore your POD files!
+                  ''',
                   style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ],
