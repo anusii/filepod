@@ -1,6 +1,6 @@
-/// FilePod - application scaffold configuration.
+/// FilePod - the primary application scaffold.
 ///
-// Time-stamp: <Friday 2026-05-15 09:18:09 +1000 Graham Williams>
+// Time-stamp: <Thursday 2026-06-04 07:57:42 +1000 Graham Williams>
 ///
 /// Copyright (C) 2026, Software Innovation Institute, ANU.
 ///
@@ -53,7 +53,9 @@ class AppScaffold extends StatelessWidget {
           title: 'Home',
           tooltip: '''
 
-            **Home**\nTap here to return to the main page for the app.
+            **Home**
+
+            Tap here to return to the main page for the app.
 
             ''',
           child: Home(title: appTitle),
@@ -63,7 +65,9 @@ class AppScaffold extends StatelessWidget {
           title: 'App Files',
           tooltip: '''
 
-            **Files**\nTap here to browse the files on your POD for this app.
+            **Files**
+
+            Tap here to browse the files on your POD for this app.
 
             ''',
           child: SolidFile(uploadConfig: filepodUploadConfig),
@@ -73,8 +77,9 @@ class AppScaffold extends StatelessWidget {
           title: 'All POD Files',
           tooltip: '''
 
-            **All Files**\nTap here to browse all folders on your POD
-            from the root.
+            **All Files**
+
+            Tap here to browse all folders on your POD from the root.
 
             ''',
           child: BrowseFiles(),
