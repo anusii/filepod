@@ -1,6 +1,6 @@
 /// FilePod - orchestrate the primary login widget.
 ///
-// Time-stamp: <Thursday 2026-06-04 07:55:55 +1000 Graham Williams>
+// Time-stamp: <Thursday 2026-06-04 13:40:14 +1000 Graham Williams>
 ///
 /// Copyright (C) 2026, Software Innovation Institute, ANU.
 ///
@@ -19,7 +19,7 @@
 // details.
 //
 // You should have received a copy of the GNU General Public License along with
-// this program.  If not, see <https://opensource.org/license/gpl-3-0>.
+// this program. If not, see <https://opensource.org/license/gpl-3-0>.
 ///
 /// Authors: Tony Chen, Graham Williams
 
@@ -57,15 +57,16 @@ class App extends StatelessWidget {
       ),
 
       home: SolidLogin(
+        title: appTitle.replaceAll(' - ', '\n'),
         image: const AssetImage('assets/images/app_image.jpg'),
         logo: const AssetImage('assets/images/app_icon.png'),
-        title: appTitle.replaceAll(' - ', '\n'),
+        link: 'https://github.com/anusii/filepod',
         clientId:
             'https://solidcommunity.au/apps/filepod/client-profile.jsonld',
         redirectUris: [
           'https://solidcommunity.au/apps/filepod/redirect.html',
+          'com.togaware.filepod://redirect',
           'http://localhost:4400/redirect',
-          'com.example.filepod://redirect',
         ],
         child: appScaffold,
       ),
