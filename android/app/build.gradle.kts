@@ -29,8 +29,8 @@ android {
         versionCode = flutter.versionCode
         versionName = flutter.versionName
         manifestPlaceholders.putAll(mapOf(
-        "appAuthRedirectScheme" to "com.example.filepod"
-    )) 
+        "appAuthRedirectScheme" to "com.togaware.filepod"
+    ))
     }
 
     buildTypes {
