@@ -1,8 +1,7 @@
 # FilePod Change Log
 
 Noted here are the high level changes for the app.  Each update
-includes a short user-oriented description.  The next release is 1.1
-following incremental updates through the 1.0.n series.
+includes a short user-oriented description.
 
 You can run the app in your
 [**browser**](https://filepod.solidcommunity.au) or else download and
@@ -36,6 +35,7 @@ Williams](https://togaware.com/Graham.Williams.html).
 
 ## 1.0
 
+Review macOS config [1.0.1 20260613 gjw]
 Updated with certified oidc solid_auth [1.0.0 20260604 gjw]
 
 ## 0.2 Review and Fine Tune
