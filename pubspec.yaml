@@ -18,7 +18,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  solidui: ^1.0.7
+  solidui: ^1.0.14
   # solidui:
   #   path: ../solidui
   window_manager: ^0.5.1
