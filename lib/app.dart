@@ -1,6 +1,6 @@
 /// FilePod - orchestrate the primary login widget.
 ///
-// Time-stamp: <Thursday 2026-06-04 13:40:14 +1000 Graham Williams>
+// Time-stamp: <Friday 2026-06-26 09:47:40 +1000 Graham Williams>
 ///
 /// Copyright (C) 2026, Software Innovation Institute, ANU.
 ///
@@ -44,8 +44,8 @@ class App extends StatelessWidget {
     return SolidThemeApp(
       // 20260429 gjw We can manually turn off the debug banner. It is turned
       // off automatically for a `flutter --release`.
-
-      debugShowCheckedModeBanner: false,
+      //
+      // debugShowCheckedModeBanner: false,
 
       title: appTitle,
 
