@@ -62,7 +62,7 @@ class App extends StatelessWidget {
         logo: const AssetImage('assets/images/app_icon.png'),
         link: 'https://github.com/anusii/filepod',
         clientId:
-            'https://filepod.solidcommunity.au/client-profile.jsonld',
+            'https://solidcommunity.au/apps/filepod/client-profile.jsonld',
         redirectUris: [
           'https://filepod.solidcommunity.au/redirect.html',
           'com.togaware.filepod://redirect',
