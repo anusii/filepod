@@ -35,9 +35,10 @@ Williams](https://togaware.com/Graham.Williams.html).
 
 ## 1.0
 
-Update solidui dependency [1.0.2 20260703 gjw]
-Review macOS config [1.0.1 20260613 gjw]
-Updated with certified oidc solid_auth [1.0.0 20260604 gjw]
++ Web oidc updates [1.0.3 20260707 tonypioneer]
++ Update solidui dependency [1.0.2 20260703 gjw]
++ Review macOS config [1.0.1 20260613 gjw]
++ Updated with certified oidc solid_auth [1.0.0 20260604 gjw]
 
 ## 0.2 Review and Fine Tune
 
