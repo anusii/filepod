@@ -64,7 +64,7 @@ class App extends StatelessWidget {
         clientId:
             'https://solidcommunity.au/apps/filepod/client-profile.jsonld',
         redirectUris: [
-          'https://solidcommunity.au/apps/filepod/redirect.html',
+          'https://filepod.solidcommunity.au/redirect.html',
           'com.togaware.filepod://redirect',
           'http://localhost:4400/redirect',
         ],
