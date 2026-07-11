@@ -35,6 +35,7 @@ Williams](https://togaware.com/Graham.Williams.html).
 
 ## 1.0
 
++ OIDC update for chrome/web [1.0.4 20260711 tonypioneer]
 + Web oidc updates [1.0.3 20260707 tonypioneer]
 + Update solidui dependency [1.0.2 20260703 gjw]
 + Review macOS config [1.0.1 20260613 gjw]
