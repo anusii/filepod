@@ -17,7 +17,7 @@ AU](https://solidcommunity.au) or directly: for **Android** as
 [dmg](https://solidcommunity.au/installers/filepod-macos.dmg) or
 [zip](https://solidcommunity.au/installers/filepod-macos.zip); for
 **Windows** as
-[inno](https://solidcommunity.au/installers/filepod-windows-inno.exe)
+[exe](https://solidcommunity.au/installers/filepod-windows-inno.exe)
 or [zip](https://solidcommunity.au/installers/filepod-windows.zip).
 
 Contributions are welcome. Visit

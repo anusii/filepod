@@ -27,7 +27,7 @@ Download the latest version:
   [dmg](https://solidcommunity.au/installers/filepod-macos.dmg) or
   [zip](https://solidcommunity.au/installers/filepod-macos.zip);
 + **Windows**
-  [inno](https://solidcommunity.au/installers/filepod-windows-inno.exe) or
+  [exe](https://solidcommunity.au/installers/filepod-windows-inno.exe) or
   [zip](https://solidcommunity.au/installers/filepod-windows.zip).
 
 ## Prerequisite
