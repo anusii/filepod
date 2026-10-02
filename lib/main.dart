@@ -50,7 +50,7 @@ void main() async {
 
   // ── Desktop setup ───────────────────────────────────────────────────────────
 
-  // 20260402 gjw We want to ensure Flutter bindings are initialized for async
+  // 20260402 gjw We want to ensure Flutter bindings are initialised for async
   // operations particularly to set the Linux desktop window [title] as we do
   // below.
 
