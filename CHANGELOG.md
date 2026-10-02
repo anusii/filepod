@@ -35,6 +35,8 @@ Williams](https://togaware.com/Graham.Williams.html).
 
 ## 1.0
 
++ Update to solidpod 1.0.22 and solidui 1.0.41 [1.0.6 20260914 gjw]
++ Remember the window size between sessions [1.0.5 20260913 gjw]
 + OIDC update for chrome/web [1.0.4 20260711 tonypioneer]
 + Web oidc updates [1.0.3 20260707 tonypioneer]
 + Update solidui dependency [1.0.2 20260703 gjw]

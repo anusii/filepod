@@ -62,21 +62,20 @@ void main() async {
     // 20260402 gjw For our desktop app we tune various window oriented
     // settings. Not requored for mobile apps.
 
-    const windowOptions = WindowOptions(
-      title: appTitle,
-      minimumSize: Size(500, 800),
-      backgroundColor: Colors.transparent,
-      skipTaskbar: false,
-      titleBarStyle: TitleBarStyle.normal,
+    // 20260913 gjw Shown through solidui, which opens the window at the size
+    // it was last left at and keeps that size up to date as it is resized.
+    // The user sets the size, and turns remembering it off, under Settings in
+    // the profile menu.
+
+    await SolidWindowSize.show(
+      const WindowOptions(
+        title: appTitle,
+        minimumSize: Size(500, 800),
+        backgroundColor: Colors.transparent,
+        skipTaskbar: false,
+        titleBarStyle: TitleBarStyle.normal,
+      ),
     );
-
-    // 20260402 gjw We now await the window to be shown and to receive the
-    // focus, to then proceed to run the app.
-
-    await windowManager.waitUntilReadyToShow(windowOptions, () async {
-      await windowManager.show();
-      await windowManager.focus();
-    });
   }
 
   // ── Run the app ─────────────────────────────────────────────────────────────
